@@ -23,7 +23,7 @@
     {% endfor %}
     <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
 
-    <description><![CDATA[{{ post.content | truncate: 300 | cdata_escape}} <a href="{{ site.url }}{{ post.url }}" class="more-link">Continue reading "{{ post.title }}"</a>]]></description>
+    <description><![CDATA[{{ post.content | strip_html | truncate: 300 | cdata_escape }} <a href="{{ site.url }}{{ post.url }}" class="more-link">Continue reading "{{ post.title }}"</a>]]></description>
 
     <content:encoded><![CDATA[{{ post.content | cdata_escape }}]]></content:encoded>
   </item>
