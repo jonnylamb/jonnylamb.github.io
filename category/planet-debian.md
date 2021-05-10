@@ -1,6 +1,6 @@
 ---
 title: Planet Debian
-layout: category-feed
+layout: feed
 permalink: /category/planet-debian/feed/
 category: planet-debian
 ---
