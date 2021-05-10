@@ -16,9 +16,9 @@ worked with open source software including
 [GStreamer](http://gstreamer.freedesktop.org/), and
 [Android](http://www.android.org/).
 
-Other open source interests have included [Debian
-GNU/Linux](https://www.debian.org/) and
-[GNOME](https://www.gnome.org). I successfully completed the
+Other open source interests have included
+[Debian](https://www.debian.org/) and [GNOME](https://www.gnome.org).
+I successfully completed the
 [Debexpo](https://wiki.debian.org/Debexpo) project for Debian in the
 [Google Summer of
 Code](https://developers.google.com/open-source/gsoc/) 2008. For years

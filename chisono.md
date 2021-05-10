@@ -16,9 +16,9 @@ lavorato su software open source come
 [GStreamer](http://gstreamer.freedesktop.org/) e
 [Android](http://www.android.org/).
 
-Ho contributo ad altri progetti open source, fra cui [Debian
-GNU/Linux](https://www.debian.org/) e
-[GNOME](https://www.gnome.org). Ho completato con successo il progetto
+Ho contributo ad altri progetti open source, fra cui
+[Debian](https://www.debian.org/) e [GNOME](https://www.gnome.org). Ho
+completato con successo il progetto
 [Debexpo](https://wiki.debian.org/Debexpo) per Debian nel programma
 [Google Summer of
 Code](https://developers.google.com/open-source/gsoc/) 2008. Per
