@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="keywords" content="{{ page.tags | join: ', ' }}">
+
+    <link rel='stylesheet' id='google-webfonts' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,400i,700'>
+    <link rel="stylesheet" id='bootstrap-css' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" id="fontawesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel='stylesheet' id='highlight-css' href='{{ site.url }}/styles/highlight.css'>
+    <link rel='stylesheet' id='style-css' href='{{ site.url }}/styles/site.css'>
+
+    {% feed_meta %}
+    {% seo %}
+  </head>
+
+  <body>
+
+    <div id="page" class="container responsive-container">
+
+      <nav class="navbar navbar-expand navbar-light">
+        <a class="navbar-brand" href="/">{{ site.title }}</a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-label="Feed" href="/feed/"><i class="fa fa-feed"></i></a>
+          </li>
+          {% if site.author.twitter %}
+          <li class="nav-item">
+              <a class="nav-link" aria-label="Twitter" href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter"></i></a>
+          </li>
+          {% endif %}
+          {% if site.author.instagram %}
+          <li class="nav-item">
+            <a class="nav-link" aria-label="Instagram" href="https://instagram.com/{{ site.author.instagram }}"><i class="fa fa-instagram"></i></a>
+          </li>
+          {% endif %}
+          {% if site.author.github %}
+          <li class="nav-item">
+            <a class="nav-link" aria-label="Github" href="https://github.com/{{ site.author.github }}"><i class="fa fa-github-alt"></i></a>
+          </li>
+          {% endif %}
+          {% if site.author.linkedin %}
+          <li class="nav-item">
+            <a class="nav-link" aria-label="LinkedIn" href="https://linkedin.com/in/{{ site.author.linkedin }}"><i class="fa fa-linkedin"></i></a>
+          </li>
+          {% endif %}
+        </ul> <!-- .navbar-nav -->
+      </nav>
+

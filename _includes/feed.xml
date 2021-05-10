@@ -1,0 +1,35 @@
+{% assign posts = site.posts | where_exp: "post", "post.categories contains page.category" %}
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
+
+<channel>
+  <title>{{ page.title }}</title>
+  <atom:link href="{{ page.url }}" rel="self" type="application/rss+xml" />
+  <link>{{ site.url }}</link>
+  <description>{{ site.description }}</description>
+  <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+  <language>en-GB</language>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
+
+  {% for post in posts %}
+  <item>
+    <title>{{ post.title }}</title>
+    <link>{{ site.url }}{{ post.url }}</link>
+    <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+    {% for category in post.categories %}
+    <category><![CDATA[{{ category | cdata_escape }}]]></category>
+    {% endfor %}
+    <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+
+    <content:encoded><![CDATA[{{ post.content | cdata_escape }}]]></content:encoded>
+  </item>
+  {% endfor %}
+</channel>
+</rss>

@@ -1,0 +1,2 @@
+{% assign posts = site.posts | where_exp: "post", "post.categories contains page.category" %}
+{% include feed.xml %}

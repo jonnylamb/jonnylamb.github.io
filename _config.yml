@@ -1,0 +1,28 @@
+title: Jonny Lamb
+tagline: Jonny Lamb
+description: Jonny Lamb's personal website.
+canonical: https://jonnylamb.com
+lang: en_GB
+
+author:
+  name: Jonny Lamb
+  bio: >
+      Software Engineer at Twitter currently working on Live.
+      Previously at Collabora as Wayland developer and Telepathy
+      maintainer. Sometimes also Debian developer and GNOME
+      contributor.
+  email: jonnylamb@jonnylamb.com
+  twitter: jonnylamb
+  linkedin: jonnylamb
+  github: jonnylamb
+
+markdown: kramdown
+highlighter: rouge
+
+feed:
+  path: feed
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap

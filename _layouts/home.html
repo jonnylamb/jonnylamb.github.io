@@ -1,0 +1,10 @@
+{% include header.html %}
+{% assign post = site.posts.first %}
+{% assign id = post.id %}
+{% assign url = post.url %}
+{% assign title = post.title %}
+{% assign date = post.date %}
+{% assign image = post.image %}
+{% assign content = post.content %}
+{% include post.html %}
+{% include footer.html %}

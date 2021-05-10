@@ -1,0 +1,28 @@
+
+    </div> <!-- responsive-container -->
+
+    <div class="latest-posts">
+      <div class="responsive-container container responsive-content">
+        <div class="row">
+          <div class="col-sm-auto">
+            <h2 class="entry-subtitle">Latest posts</h2>
+          </div>
+          <div class="col-sm">
+            {% for post in site.posts | limit:5 %}
+              <h6 class="entry-title">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <small class="text-muted">{{ post.date | date: "%B %d, %Y" }}</small>
+              </h6>
+            {% endfor %}
+          </div>
+        </div>
+      </div> <!-- .responsive-container -->
+    </div> <!-- .latest-posts -->
+
+    <script type="text/javascript" src="//static.getclicky.com/js"></script>
+    <script type="text/javascript">try { clicky.init(101316228); } catch(e) {}</script>
+
+  </body>
+
+</html>
+

@@ -1,0 +1,34 @@
+      <article>
+
+        {% if image %}
+        <img class="img-fluid entry-image" src="{{ image }}"/>
+        {% endif %}
+
+        <div class="responsive-content">
+
+          <header class="entry-header">
+
+            <hgroup>
+              <h1 class="entry-title text-center">
+                <a href="{{ url }}" title="Permalink to {{ title }}" rel="bookmark">{{ title }}</a>
+              </h1>
+
+              <h2 class="entry-subtitle text-secondary">{{ date | date: "%B %d, %Y" }}</h2>
+            </hgroup>
+
+          </header> <!-- .entry-header -->
+
+          {{ content }}
+
+          <div class="entry-meta">
+            <hr/>
+            <p>
+              <span class="entry-author">{{ site.author.name }}</span>
+              {{ site.author.bio }} <a href="/about">Read more.</a>
+            </p>
+
+          </div> <!-- .entry-meta -->
+
+        </div> <!-- .responsive-content -->
+
+     </article>
