@@ -8,7 +8,7 @@
 
 <channel>
   <title>{{ page.title }}</title>
-  <atom:link href="{{ page.url }}" rel="self" type="application/rss+xml" />
+  <atom:link href="{{ site.url }}{{ page.url }}" rel="self" type="application/rss+xml" />
   <link>{{ site.url }}</link>
   <description>{{ site.description }}</description>
   <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
