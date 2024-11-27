@@ -4,7 +4,7 @@ layout: page
 permalink: /about/
 ---
 
-Currently at [Twitter](https://twitter.com) hacking on Live.
+Currently at [Twitter](https://twitter.com) working on video stuff.
 
 Previously I was at [Collabora](http://www.collabora.co.uk/), where I
 worked with open source software including
