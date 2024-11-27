@@ -27,5 +27,3 @@ I was a contributor to the
 [Bongo](http://gna.org/projects/bongo) projects where I assumed
 several roles, including project leader, release manager, package
 maintainer, and software maintainer.
-
-[Italian version of this page](/chisono/).
